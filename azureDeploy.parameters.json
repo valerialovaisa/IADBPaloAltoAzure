@@ -6,22 +6,44 @@
       "value": "0.0.0.0/0"
     },
     "virtualNetworkAddressPrefix": {
-      "value": "192.168.0.0/16"
+      "value": "10.0.0.0/16"
     },
+    "virtualNetworkName":{
+      "value": "test"
+    }, 
     "virtualNetworkNewOrExisting": {
       "value": "existing"
     },
+    "mgmtSubnetPrefix": {
+      "value": "10.0.1.0/24"
+    },
+    "untrustedSubnetPrefix": {
+      "value": "10.0.2.0/24"
+    },
+    "trustedSubnetPrefix": {
+      "value": "10.0.3.0/24"
+    },
+    "appGatewaySubnetPrefix": {
+      "value": "10.0.4.0/24"
+    },
+    "backendSubnetPrefix": {
+      "value": "10.0.5.0/24"
+    }, 
+    "virtualNetworkExistingRGName": {
+      "value": "testpa"
+    },
+    
     "username": {
-      "value": "DEFAULT-USER"
+      "value": "admin_test"
     },
     "password": {
-      "value": "DEFAULT-PASSWORD"
+      "value": "Washington1234%"
     },
     "storageAccountName": {
-      "value": "DEFAULT-STORAGE"
+      "value": "testidb05"
     },
     "storageAccountNewOrExisting": {
-      "value": "existing"
+      "value": "new"
     }
   }
 }
