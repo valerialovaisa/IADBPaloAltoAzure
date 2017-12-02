@@ -258,7 +258,7 @@
     "rgname" : "[parameters('virtualNetworkExistingRGName')]",
     "LoadBalancerType" : "layer-7",
     "firewallVmCount" : 2,
-    "baseUrl" : "file:///C:/dev/azure-applicationgateway-master/azure-applicationgateway-master/",
+    "baseUrl" : "https://github.com/valerialovaisa/IADBPaloAltoAzure.git/",
     "nsgURL" : "[concat(variables('baseUrl'),'/nsg-new.json')]",
     "vnetURL" : "[concat(variables('baseUrl'),'/vnet-', parameters('virtualNetworkNewOrExisting'),'.json')]",
     "publicLBURL" : "[concat(variables('baseUrl'),'/public-lb-', variables('LoadBalancerType'), '.json')]",
