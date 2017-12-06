@@ -15,8 +15,15 @@
       "metadata": {
         "description": "Public Load Balancer IP Name"
       } 
-    },  
-
+    }, 
+    "vnetName": { 
+            "type": "string", 
+             "defaultValue": "test", 
+             "metadata": { 
+             "description": "VNET name" 
+           } 
+          }, 
+     
     "skuName": {
       "type": "string",
       "allowedValues": [
@@ -40,10 +47,10 @@
       "type": "array",
       "defaultValue": [
         {
-          "IpAddress": "10.0.4.4"
+          "IpAddress": "10.0.2.4"
         },
         {
-          "IpAddress": "10.0.4.5"
+          "IpAddress": "10.0.2.5"
         }
       ],
       "metadata": {
@@ -66,7 +73,7 @@
   },
   "variables": {
     "applicationGatewayName": "[parameters('lbName')]",
-    "vnetID": "[resourceId(parameters('virtualNetworkExistingRGName'),concat('Microsoft.Network','/','virtualNetworks'),parameters('virtualNetworkName'))]",
+    "vnetID": "[resourceId(parameters('virtualNetworkExistingRGName'),concat('Microsoft.Network','/','virtualNetworks'),parameters('vnetName'))]",
     "subnetRef": "[concat(variables('vnetID'),'/subnets/',parameters('subnetName'))]",
     "publicIPRef": "[resourceId('Microsoft.Network/publicIPAddresses',parameters('publicIPAddressName'))]",
     "applicationGatewayID": "[resourceId('Microsoft.Network/applicationGateways',variables('applicationGatewayName'))]",
