@@ -56,10 +56,7 @@
       "metadata": {
         "description": "back end pool ip addresses"
       }
-    },
-    "virtualNetworkName": {
-      "type": "string"
-    },
+    },  
     "virtualNetworkExistingRGName": {
       "type": "string"
     },
