@@ -56,6 +56,12 @@
         "description": "back end pool ip addresses"
       }
     },
+    "virtualNetworkName": {
+      "value": "[parameters('virtualNetworkName')]"
+    },
+    "virtualNetworkExistingRGName": {
+      "type": "string"
+    },
     "subnetName": {
       "type": "string",
       "defaultValue": "UntrustLB",
@@ -66,7 +72,7 @@
   },
   "variables": {
     "applicationGatewayName": "[parameters('lbName')]",
-    "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',parameters('vnetName'))]",
+    "vnetID": "[resourceId(parameters('virtualNetworkExistingRGName'),concat('Microsoft.Network','/','virtualNetworks'),parameters('virtualNetworkName'))]",
     "subnetRef": "[concat(variables('vnetID'),'/subnets/',parameters('subnetName'))]",
     "publicIPRef": "[resourceId('Microsoft.Network/publicIPAddresses',parameters('publicIPAddressName'))]",
     "applicationGatewayID": "[resourceId('Microsoft.Network/applicationGateways',variables('applicationGatewayName'))]",
