@@ -16,13 +16,7 @@
         "description": "Public Load Balancer IP Name"
       } 
     },  
-    "vnetName": {
-      "type": "string",
-      "defaultValue": "myVNET",
-      "metadata": {
-        "description": "VNET name"
-      }
-    },
+
     "skuName": {
       "type": "string",
       "allowedValues": [
@@ -46,10 +40,10 @@
       "type": "array",
       "defaultValue": [
         {
-          "IpAddress": "10.0.0.4"
+          "IpAddress": "10.0.4.4"
         },
         {
-          "IpAddress": "10.0.0.5"
+          "IpAddress": "10.0.4.5"
         }
       ],
       "metadata": {
