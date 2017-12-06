@@ -57,7 +57,7 @@
       }
     },
     "virtualNetworkName": {
-      "value": "[parameters('virtualNetworkName')]"
+      "type": "string"
     },
     "virtualNetworkExistingRGName": {
       "type": "string"
