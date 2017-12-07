@@ -59,7 +59,10 @@
     },  
     "virtualNetworkExistingRGName": {
       "type": "string",
-      "value": "existing"
+      "defaultValue": "testpa",
+      "metadata": {
+        "description": "This is the name of the Resource Group"
+      }
     },
     "subnetName": {
       "type": "string",
