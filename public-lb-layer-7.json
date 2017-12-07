@@ -58,7 +58,8 @@
       }
     },  
     "virtualNetworkExistingRGName": {
-      "type": "string"
+      "type": "string",
+      "value": "existing"
     },
     "subnetName": {
       "type": "string",
