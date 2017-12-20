@@ -18,7 +18,7 @@
     }, 
     "vnetName": { 
             "type": "string", 
-             "defaultValue": "test", 
+             "defaultValue": "Intranet", 
              "metadata": { 
              "description": "VNET name" 
            } 
@@ -47,10 +47,10 @@
       "type": "array",
       "defaultValue": [
         {
-          "IpAddress": "10.0.2.4"
+          "IpAddress": "10.192.6.68"
         },
         {
-          "IpAddress": "10.0.2.5"
+          "IpAddress": "10.192.6.69"
         }
       ],
       "metadata": {
@@ -59,14 +59,14 @@
     },  
     "virtualNetworkExistingRGName": {
       "type": "string",
-      "defaultValue": "testpa",
+      "defaultValue": "Network",
       "metadata": {
         "description": "This is the name of the Resource Group"
       }
     },
     "subnetName": {
       "type": "string",
-      "defaultValue": "UntrustLB",
+      "defaultValue": "sn-p-application-gateway",
       "metadata": {
         "description": "App Gateway subnet Name"
       }

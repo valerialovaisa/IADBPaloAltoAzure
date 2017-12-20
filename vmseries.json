@@ -20,7 +20,7 @@
        "metadata": {
           "description": "Name of VM-Series VM in the Azure portal"
        },
-       "defaultValue": "VM-Series"
+       "defaultValue": "AZPFWPA"
     },
     "vmSize": {
        "type": "string",
@@ -36,7 +36,7 @@
        "metadata": {
           "description": "Azure VM size for VM-Series"
        },
-       "defaultValue": "Standard_D3"
+       "defaultValue": "Standard_D3_v2"
     },
     "imageSku": {
        "type": "string",
@@ -48,14 +48,14 @@
        "metadata": {
           "description": "byol = Bring Your Own License; bundle1 = Bundle 1 PAYG (Hourly); bundle2 = Bundle 2 PAYG (Hourly)"
        },
-       "defaultValue": "byol"
+       "defaultValue": "bundle2"
     },
     "virtualNetworkName": { 
       "type": "string",
       "metadata": {
         "description": "Name of the Virtual Network (VNET)"
       },
-      "defaultValue": "fwVNET"
+      "defaultValue": "Intranet"
     },
     "virtualNetworkExistingRGName": {
       "type": "string",
@@ -66,21 +66,21 @@
     },
     "subnet0Name": {
       "type": "string",
-      "defaultValue": "Mgmt",
+      "defaultValue": "sn-p-fw-mgmt",
       "metadata": {
         "description": "Subnet for Management"
       }
     },
     "subnet1Name": {
       "type": "string",
-      "defaultValue": "Untrust",
+      "defaultValue": "sn-p-fw-untrust",
       "metadata": {
         "description": "Subnet for Untrust"
       }
     },
     "subnet2Name": {
       "type": "string",
-      "defaultValue": "Trust",
+      "defaultValue": "sn-p-fw-trust",
       "metadata": {
         "description": "Subnet for Trust"
       }
@@ -142,7 +142,7 @@
     },
     "MgmtPublicIPAddressName": {
       "type": "string",
-      "defaultValue": "vm-servies-pib-mgmt",
+      "defaultValue": "idb-vm-servies-pib-mgmt",
       "metadata": {
         "description": "Name of public IP resource for mgmt interface"
       }

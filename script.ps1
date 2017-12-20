@@ -5,7 +5,7 @@ $proxy = [System.Net.CredentialCache]::DefaultCredentials
 Add-AzureRMAccount
 #Get-AzureRmSubscription
 #Set-AzureRmContext -SubscriptionName "Enterprise Dev/Test"
-$resourcegroup = "rg-p-pw-paloalto01"
+$resourcegroup = "rg-p-fw-paloalto"
 New-AzureRmResourceGroup -Name $resourcegroup -Force -Location "East US2"
 $rmtem = "C:\dev\azure-applicationgateway-master\azure-applicationgateway-master\azuredeploy.json"
 $rmpar = "C:\dev\azure-applicationgateway-master\azure-applicationgateway-master\azureDeploy.parameters.json"
