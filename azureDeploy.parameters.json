@@ -34,10 +34,10 @@
     },
     
     "username": {
-      "value": "panfwadmin"
+      "value": ""
     },
     "password": {
-      "value": "Washington1234%"
+      "value": ""
     },
     "storageAccountName": {
       "value": "sappaloalto"
